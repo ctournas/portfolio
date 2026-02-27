@@ -1,3 +1,6 @@
 .vscode/
 *.db
 CLAUDE.md
+
+# ignore case-variant accidental uploads
+[cC][lL][aA][uU][dD][eE].md
