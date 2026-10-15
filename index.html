@@ -96,6 +96,9 @@
                             </h1>
                             <h2 class="mt-2 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
                                 AI Engineer | Robotics Enthusiast
+                                <a href="https://drive.google.com/file/d/1a1vFSxGVd5irOn1Qgan-7e3ewhGarzrz/view" target="_blank" rel="noreferrer" class="ml-2 inline-flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 hover:bg-teal-400/20 transition-colors align-middle">
+                                    CV<i class="fas fa-arrow-up-right-from-square ml-1.5 text-[10px]"></i>
+                                </a>
                             </h2>
                         </div>
                     </div>
@@ -279,6 +282,36 @@
                                         </ul>
                                     </div>
                                     <img alt="CanaryBench" loading="lazy" width="200" height="48" decoding="async" class="z-10 rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" src="images/canarybench-project.png" style="color:transparent">
+                                </div>
+                            </li>
+
+                            <!-- Project 0c: AWS MLOps Image Classifier -->
+                            <li class="mb-16">
+                                <div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                    <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                                    <div class="z-10 sm:order-2 sm:col-span-6">
+                                        <h3>
+                                            <a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base" href="https://github.com/ctournas/recycle-classifier" target="_blank" rel="noreferrer" aria-label="End-to-End MLOps Pipeline on AWS">
+                                                <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                                                <span class="inline-block">End-to-End MLOps Pipeline on AWS<i class="fas fa-arrow-right ml-1 text-sm transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1"></i></span>
+                                            </a>
+                                        </h3>
+                                        <p class="mt-2 text-sm leading-normal">
+                                            Designed and built a production-style recycling image classifier (11 classes) on AWS SageMaker, fine-tuning a pretrained Vision Transformer and serving it through a real-time endpoint behind a REST API (API Gateway + Lambda). Implemented an automated SageMaker Pipeline (train → evaluate → conditional deploy) where an evaluation gate compares each candidate model against the one in production and triggers a zero-downtime blue/green deployment only if accuracy improves. Closed the loop with LLM-in-the-loop retraining: low-confidence production predictions are stored, automatically labeled by Claude through Amazon Bedrock, and, once enough valid samples accumulate, trigger a new training run. Tracked every training run with MLflow (metrics, parameters, and artifacts), monitored the system with CloudWatch custom metrics, and secured it with least-privilege IAM roles.
+                                        </p>
+                                        <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+                                            <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Python</div></li>
+                                            <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">PyTorch</div></li>
+                                            <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Hugging Face</div></li>
+                                            <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">AWS SageMaker</div></li>
+                                            <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">AWS Lambda</div></li>
+                                            <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Amazon Bedrock</div></li>
+                                            <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Amazon S3</div></li>
+                                            <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">MLflow</div></li>
+                                            <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">CloudWatch</div></li>
+                                        </ul>
+                                    </div>
+                                    <img alt="SageMaker Pipeline: train, compare, conditional deploy" loading="lazy" width="200" height="48" decoding="async" class="z-10 rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" src="images/image-classifier-aws.png" style="color:transparent">
                                 </div>
                             </li>
 
